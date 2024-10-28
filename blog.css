@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+.blogbox{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    display: block;
+}
+.sidebar,.hamburger{
+    z-index: 1;
+}
+.blog-main{
+    background-image: url("img/blogbg1.jpeg");
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 580px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #f8f8f8;
+}
+.blog-intro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 520px;
+    text-align: center;
+    margin: 0;
+    font-family: 'Montserrat',sans-serif;
+    z-index: 0;
+}
+.blog-intro h1{
+    color: white;
+    font-size: 37px;
+    font-weight: 700;
+    margin: 0 0 30px;
+}
+.blog-intro p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #bbbbbb;
+    margin: 0;
+}
+.blog-intro a{
+    color: white;
+    display: inline-block;
+    border-bottom: 1px solid #5b6876;
+    line-height: 40px;
+    margin-right: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transform: translateX(-20px);
+    text-decoration: none;
+}
+.blog-intro a:hover{
+    color: #004bec;
+    transition: 0.5s ease;
+    transform: translateX(0px); 
+}
+.wel h1{
+    text-align: center;
+    margin: 10px ;
+}
+.search-input{
+    width: 30vw;
+    padding: 15px 10px;
+    margin: 30px 20px 0px 30px;
+    cursor: pointer;
+    border: 2px solid rgb(167, 0, 167);
+    border-radius: 20px;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2); ;
+}
+.search-input:focus{
+    outline: none !important;
+    border-color: rgb(167, 0, 167);
+    box-shadow: 0 0 10px #719ECE;
+}
+.search-button{
+    margin-left: 5px;
+    padding: 7px 10px 12px 10px;
+    font-size: 20px;
+    color:  rgb(167, 0, 167);
+    border: 2px solid   rgb(167, 0, 167);
+    border-radius: 14px;
+    cursor: pointer;
+}
+.search-button:hover{
+    color: white;
+    background-color: rgb(167, 0, 167);
+}
+.blog-body{
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.blog-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 21rem;
+    height: 42rem;
+    margin: 15px;
+    
+}
+.blog-content img{
+    width: 18rem;
+    height: 16rem;
+    box-shadow: 3px 3px 3px rgb(142, 140, 140);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.line{
+    width: 20rem;
+    height: 5px;
+    background-color: rgb(167, 0, 167);
+    border-radius: 2px;
+    margin-bottom: 30px ;
+}
+.card-title{
+    font-family: 'Combo', cursive;
+    text-align: center;
+    color: rgb(167, 0, 167);
+    margin: 35px 0px;
+}
+.card-info a{
+    text-decoration: none;
+}
+.blog-content p{
+    font-family: 'Ms Madi', cursive;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.place{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+@media  screen and (max-width: 1060px) {
+    .blog-body{
+        width: 95vw;
+        padding: 15px 5px;
+    }
+}
+
+@media  screen and (max-width: 700px) {
+    .blog-body{
+        width: 95vw;
+        padding: 15px 5px;
+    }
+    
+}
+@media screen and ( max-width:400px) {
+    .blog-content img{
+        width: 60vw;
+        height: 25vh;
+    }
+    .blog-content{
+        height: 65vh;
+    }
+    .card-info{
+        width: 80vw;
+        height: 50vh;
+    }
+    .line{
+        width: 75vw;
+    }    
+}
+
+
+.reveal{
+    position: relative;
+    transform: scale3d(0.85,0.85,0.85);
+    opacity: 0;
+    transition: 0.35s  ease-in;
+  }
+  
+  .reveal.activean{
+    transform: scale3d(1,1,1);
+    opacity: 1;
+  }
+
+  .revealline{
+    position: relative;
+    transform: translateY(20px);
+    opacity: 0;
+    transition-delay: 0.5s;
+    transition: 0.5s  ease-in;
+  }
+  .revealline.activeanline{
+    transform: translateX(0);
+    opacity: 1;
+  }

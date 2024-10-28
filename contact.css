@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:ital@1&family=Raleway:ital,wght@1,600&family=Roboto+Mono&display=swap');
+.main{
+    background-image: url('img/bg.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#contact-main{
+    width: 100%;
+    height: 100vh;
+}
+.contactform{
+    font-family: 'Roboto Mono', monospace;
+}
+.contactform h1{
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.input-form{
+    background-image: url('img/form.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 50rem;
+    margin: 20px auto;
+    padding: 25px 0px;
+}
+.name,.email,.phone{
+    height: 3.5em;
+    margin: 25px 15px;
+}
+.input-name{
+    width: 40rem;
+    margin: 5px 10px;
+    padding: 15px 10px;
+    border: 1px solid  rgb(0, 92, 167);
+    border-radius: 15px;
+    background-color: rgb(186, 214, 235);
+}
+.input-email,.input-phone{
+    width: 40rem;
+    margin: 5px 0px;
+    padding: 15px 10px;
+    border: 0.5px solid rgb(0, 92, 167);
+    border-radius: 15px;
+    background-color: rgb(186, 214, 235);
+}
+
+.comment{
+    margin: 15px 10px;
+}
+.comment label,.email label,.name label,.phone label{
+    color: aliceblue;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.input-comment{
+    width: 37rem;
+    padding: 15px 10px;
+    border: 0.5px solid rgb(0, 92, 167);
+    border-radius: 15px;
+    background-color: rgb(186, 214, 235);
+}
+
+.input-name:focus,.input-email:focus,.input-phone:focus,.input-comment:focus{
+    outline: none !important;
+    transition: 0.25s ease-in-out;
+    border:2px solid rgb(25, 184, 232);
+    box-shadow: 0 0 10px #3ec0f0;
+}
+
+@media  screen and (max-width: 1200px) {
+    .sidebar{
+        transform: translate(-300px , 0px);
+        position: absolute;
+    }
+    .main{
+        width: 100vw;
+        height: 100vh;
+    }
+    .input-form{
+        width: 48rem;
+        
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .input-form {
+        width: 30rem; 
+    }
+    .input-email,.input-phone,.input-name{
+        width: 20rem;
+    }
+    .input-comment{
+        width: 17rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .input-form {
+        width: 23rem; 
+    }
+    .input-email,.input-phone,.input-name{
+        width: 15rem;
+    }
+    .input-comment{
+        width: 12rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .input-form {
+        width: 16rem; 
+    }
+    .input-email,.input-phone,.input-name,.input-comment {
+        width: 12rem;
+    }
+    .contactform h1 {
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:ital@1&family=Raleway:ital,wght@1,600&family=Roboto+Mono&display=swap');
+#intro-main{
+    width: 100vw;
+}
+.intro h1{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+.intro{
+    background-color: black;
+}
+.introc{
+    display: flex;
+    flex-direction: row;
+}
+.introcon{
+    color: white;
+}
+.introcon h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3em;
+    margin-left: 3em;
+}
+.introcon h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    margin-left: 6em;
+    color: blue;
+}
+.introcon p{
+    font-family: 'Combo', cursive;
+    font-size: 1.5em;
+    margin: 1em 1em 2em 9em;
+}
+.quotes{
+    color: aqua;
+    font-size: 1.2em;
+}
+.aboutme{
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 10px 0px 60px 0px;
+}
+.aboutmeh{
+  font-family: 'Roboto Mono', monospace;
+  width: 20rem;
+}
+.aboutmeh p{
+  color: rgb(0, 140, 255);
+  font-size: 1.5em;
+  margin: 20px 5px;
+}
+.aboutme h1{
+  margin: 30px 5px;
+}
+.aboutme a{
+  margin: 1px 1px;
+}
+.aboutmep{
+  width: 30rem;
+}
+.aboutmep p{
+  font-family: 'Combo', cursive;
+  margin: 15px 1px;
+  font-size: 1.25em;
+}
+.philo{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(244, 234, 215);
+}
+.phi-des{
+    width: 50vw;
+    transform: translateX(-200px);
+    transition: 0.5s ease-out;
+    opacity: 0;
+}
+.phi-img img{
+    width: 40vw;
+    transform: scale3d(0.85,0.85,1);
+    transition: 0.5s ease-out;
+}
+.phi-img{
+    margin-bottom: -5px;
+}
+.phi-des h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 4em;
+    margin: 5px 150px;
+}
+.phi-des p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+    margin: 15px 75px;
+}
+.phi-des a{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+    margin-left: 75px;
+}
+.expf{
+    background-color: black;
+    padding: 15px 0px;
+}
+.exp-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+.exp-h{
+    color: aliceblue;
+}
+.exp-h p{
+    font-family: 'Lato', sans-serif;
+    margin: 15px 15px;
+    font-size: 2em;
+}
+.exp-h h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 10px 15px;
+    font-size: 2em;
+}
+.exp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 22rem;
+    height: 14rem;
+    margin: 15px;
+    color: white;
+}
+.exp1,.exp2,.exp3{
+    margin-top: 15px;
+    padding-bottom: 25px;
+   border-radius: 15px;
+}
+.exp1{
+    position: relative;
+    transform: translateX(-100px);
+    transition: 0.75s ease-out;
+    opacity: 0;
+}
+.exp2{
+    position: relative;
+    transform: translateX(-100px);
+    transition: 0.75s ease-out;
+    transition-delay: 0.2s;
+    opacity: 0;
+}
+.exp3{
+    position: relative;
+    transform: translateX(-100px);
+    transition: 0.75s ease-out;
+    transition-delay: 0.4s;
+    opacity: 0;
+}
+.expi1{
+    font-family: 'Roboto Mono', monospace;
+    color: gray;
+    padding: 6px 18px;
+    font-size: 6.5em;
+}
+.expi2{
+    margin-bottom: 15px;
+    padding: 0px 20px;
+    font-size: 2em;
+    font-family: 'Combo', cursive;
+}
+.expi3{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0px 22px;
+    font-size: 1.2em;
+}
+  .reveal.activean{
+    transform: translateX(0);
+    opacity: 1;
+  }
+/*.reveal{
+    position: relative;
+    opacity: 0;
+  }
+  .reveal.activean {
+    opacity: 1;
+  }
+  .activean.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+  }
+  .activean.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+  .activean.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  */
+
+@media (max-width: 1200px) {
+    .container { font-size: 12px; }
+}
